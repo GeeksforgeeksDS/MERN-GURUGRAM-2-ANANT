@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Basic Example to Describe JavaScript</title>
+  </head>
+
+  <body>
+    <script>
+      // (param1, param2, paramN) => expression
+      // ES5
+      // const regular = function (x, x) {
+      //   return x * x;
+      // };
+      // function regular(x, x) {
+      //   return x * x;
+      // }
+      // // ES6
+
+      function regular(x, x) {
+        // console.log(arguments);
+
+        return x * x;
+      }
+      const arrow = (x, x) => {
+        console.log(arguments);
+        return x + x;
+      };
+      console.log(arrow(3, 3));
+      // const arrow2 = (x, y) => x + y;
+      // console.log(arrow(2, 3));
+
+      // console.log(regular(2, 3));
+    </script>
+  </body>
+</html>
